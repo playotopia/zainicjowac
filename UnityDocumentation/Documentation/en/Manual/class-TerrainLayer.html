@@ -1,0 +1,283 @@
+<!DOCTYPE html><html lang="en" class="no-js">
+<head>
+<meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],   j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=   'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);  })(window,document,'script','dataLayer','GTM-MC35ML');</script><script src="https://store.unity.com/themes/contrib/unity_base/js/unity-cdp.js"></script><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Unity - Manual:  Terrain Layers</title>
+<meta property="og:image" content="https://unity3d.com/files/images/ogimg.jpg">
+<meta name="author" content="Unity Technologies">
+<link rel="shortcut icon" href="../StaticFilesManual/images/favicons/favicon.ico">
+<link rel="icon" type="image/png" href="../StaticFilesManual/images/favicons/favicon.png">
+<link rel="apple-touch-icon-precomposed" sizes="152x152" href="../StaticFilesManual/images/favicons/apple-touch-icon-152x152.png">
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="../StaticFilesManual/images/favicons/apple-touch-icon-144x144.png">
+<link rel="apple-touch-icon-precomposed" sizes="120x120" href="../StaticFilesManual/images/favicons/apple-touch-icon-120x120.png">
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="../StaticFilesManual/images/favicons/apple-touch-icon-114x114.png">
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="../StaticFilesManual/images/favicons/apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon-precomposed" href="../StaticFilesManual/images/favicons/apple-touch-icon.png">
+<meta name="msapplication-TileColor" content="#222c37">
+<meta name="msapplication-TileImage" content="../StaticFilesManual/images/favicons/tileicon-144x144.png">
+<script type="text/javascript" src="../StaticFilesManual/js/jquery.js?ts=1551282909"></script><script type="text/javascript" src="../StaticFilesManual/js/core.js?ts=1551282909"></script><script type="text/javascript" src="docdata/toc.js?ts=1551282909"></script><script type="text/javascript" src="docdata/global_toc.js?ts=1551282909"></script><link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700,400italic" rel="stylesheet" type="text/css">
+<link rel="stylesheet" type="text/css" href="../StaticFilesManual/css/core.css?ts=1551282909">
+<link rel="stylesheet" href="../StaticFilesManual/js/feedback/five-star-rating-master/css/rating.min.css">
+<script src="../StaticFilesManual/js/feedback/five-star-rating-master/js/src/rating.js"></script>
+</head>
+<body>
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MC35ML" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<div id="DocsAnalyticsData" data-area="Graphics" data-pagetype="reference"></div>
+<div class="header-wrapper">
+<div id="header" class="header"><div class="content">
+<div class="spacer"><div class="menu">
+<div class="logo"><a href="https://docs.unity3d.com"></a></div>
+<div class="search-form"><form action="30_search.html" method="get" class="apisearch">
+<input type="text" name="q" placeholder="Search manual..." autosave="Unity Reference" results="5" class="sbox field" id="q"><input type="submit" class="submit">
+</form></div>
+<ul>
+<li><a href="../Manual/index.html" class="selected">Manual</a></li>
+<li><a href="../ScriptReference/index.html">Scripting API</a></li>
+</ul>
+</div></div>
+<div class="more">
+<div class="filler"></div>
+<ul><li><a href="https://unity3d.com/">unity3d.com</a></li></ul>
+</div>
+</div></div>
+<div class="toolbar"><div class="content">
+<div class="version-number">Version: <b>2018.3</b> (switch to <a href="https://docs.unity3d.com/2019.1/Documentation/Manual">2019.1b</a> or <a href="https://docs.unity3d.com/2017.4/Documentation/Manual">2017.4</a>)</div>
+<div class="lang-switcher">
+<div class="current toggle" data-target=".lang-list">
+<div class="lbl">Language: <span class="b">English</span>
+</div>
+<div class="arrow"></div>
+</div>
+<div class="lang-list" style="display:none;"><ul>
+<li><a href="/Manual/class-TerrainLayer.html">English</a></li>
+<li><a href="/ja/current/Manual/class-TerrainLayer.html">日本語</a></li>
+<li><a href="/es/current/Manual/class-TerrainLayer.html">Español</a></li>
+<li><a href="/kr/current/Manual/class-TerrainLayer.html">한국어</a></li>
+<li><a href="/ru/current/Manual/class-TerrainLayer.html">Русский</a></li>
+</ul></div>
+</div>
+</div></div>
+</div>
+<div id="master-wrapper" class="master-wrapper clear">
+<div id="sidebar" class="sidebar"><div class="sidebar-wrap"><div class="content"><div class="sidebar-menu"><div class="toc"><h2>Unity Manual</h2></div></div></div></div></div>
+<div id="content-wrap" class="content-wrap"><div class="content-block"><div class="content">
+<div class="section">
+<div class="breadcrumbs clear"><ul>
+<li><a href="UnityManual.html">Unity User Manual (2018.3)</a></li>
+<li><a href="Graphics.html">Graphics</a></li>
+<li><a href="GraphicsOverview.html">Graphics Overview</a></li>
+<li><a href="script-Terrain.html">Terrain Engine</a></li>
+<li> Terrain Layers</li>
+</ul></div>
+<div class="mb20"><div class="nextprev clear">
+<div class="icon tt left mr1" data-distance="-40|-30|top">
+<span class="prev"><a href="terrain-StampTerrain.html"></a></span><div class="tip"> Stamp Terrain</div>
+</div>
+<div class="icon tt right" data-distance="-40|-30|top">
+<span class="next"><a href="class-Brush.html"></a></span><div class="tip"> Brushes</div>
+</div>
+</div></div>
+<div class="otherversionswrapper" onmouseover="setOtherVersionsDisplay(true)" onmouseout="setOtherVersionsDisplay(false)">
+<a>Other Versions</a><div class="otherversionscontent" id="OtherVersionsContent" style="display: none;">Cannot access other versions offline!</div>
+</div>
+<div class="scrollToFeedback"><a id="scrollToFeedback">Leave feedback</a></div>
+<h1>Terrain Layers</h1>
+<!--BeginSwitchLink--><a href='../ScriptReference/TerrainLayer.html' title='Go to TerrainLayer page in the Scripting Reference' class='switch-link gray-btn sbtn left'>Switch to Scripting</a><!--EndSwitchLink-->
+<div class="clear"></div>
+
+<p>To create coloration and fine detail on a <span class="tooltip"><strong>Terrain</strong><span class="tooltiptext">The landscape in your scene. A Terrain GameObject adds a large flat plane to your scene and you can use the Terrain’s Inspector window to create a detailed landscape. <a href="terrain-UsingTerrains.html">More info</a><br/><span class="tooltipGlossaryLink">See in <a href="Glossary.html#Terrain">Glossary</a></span></span></span>, add texture to its surface. Since Terrain objects are typically large, it is standard practice to use a texture that repeats seamlessly, and tile it over the surface. The repeated texture generally isn’t noticeable from a character’s viewpoint, which is close to the ground.</p>
+
+<p>Although one texture always serves as the background layer over the landscape, you can paint areas with additional textures to simulate different ground surfaces such as grass, desert, or snow. For example, to create a gradual transition between grassy countryside and a sandy beach, apply textures with variable opacity.</p>
+
+<figure>
+<img src="../uploads/Main/1.4-SandyTerrain.png" alt="Terrain with sandy texture">
+<figcaption>Terrain with sandy texture</figcaption>
+</figure>
+
+<p>A <strong>Terrain Layer</strong> is a container for information that defines a given surface for Terrain. It holds data such as textures and other properties, which the Terrain Material uses to render the Terrain surfaces. Because Terrain Layers are <span class="tooltip"><strong>Assets</strong><span class="tooltiptext">Any media or data that can be used in your game or Project. An asset may come from a file created outside of Unity, such as a 3D model, an audio file or an image. You can also create some asset types in Unity, such as an Animator Controller, an Audio Mixer or a Render Texture. <a href="AssetWorkflow.html">More info</a><br/><span class="tooltipGlossaryLink">See in <a href="Glossary.html#Asset">Glossary</a></span></span></span>, you can easily reuse them on multiple Terrain tiles.</p>
+
+<h2>Creating Terrain Layers</h2>
+
+<p>To create a Terrain Layer directly from the Terrain Inspector, click the paintbrush icon in the <span class="tooltip"><strong>toolbar</strong><span class="tooltiptext">A row of buttons and basic controls at the top of the Unity Editor that allows you to interact with the Editor in various ways (e.g. scaling, translation). <a href="Toolbar.html">More info</a><br/><span class="tooltipGlossaryLink">See in <a href="Glossary.html#Toolbar">Glossary</a></span></span></span> at the top of the Terrain Inspector, and select <strong>Paint Texture</strong> from the drop-down menu. At the bottom of the <strong>Terrain Layers</strong> section, click the <strong>Edit Terrain Layers</strong> button, and choose <strong>Create Layer</strong>.</p>
+
+<figure>
+<img src="../uploads/Main/1.4-CreateLayer.png" alt="Create Layer in the Terrain Inspector">
+<figcaption>Create Layer in the Terrain Inspector</figcaption>
+</figure>
+
+<p>Clicking <strong>Create Layer</strong> opens the <strong>Select Texture2D</strong> window, where you choose the image to use as the <strong>Diffuse</strong> channel of the Terrain Layer. To assign a <strong>Normal Map</strong> or <strong>Mask Map</strong> texture to your Terrain Layer, select the corresponding Terrain Layer in the <span class="tooltip"><strong>Project</strong><span class="tooltiptext">In Unity, you use a Project to design and develop a game. A Project stores all of the files that are related to a game, such as the Asset and Scene files. <a href="2Dor3D.html">More info</a><br/><span class="tooltipGlossaryLink">See in <a href="Glossary.html#Project">Glossary</a></span></span></span> view, and use its <span class="tooltip"><strong>Inspector</strong><span class="tooltiptext">A Unity window that displays information about the currently selected GameObject, Asset or Project Settings, alowing you to inspect and edit the values. <a href="UsingTheInspector.html">More info</a><br/><span class="tooltipGlossaryLink">See in <a href="Glossary.html#Inspector">Glossary</a></span></span></span> window.</p>
+
+<p>Alternatively, to create a Terrain Layer Asset, right-click the Project window, and select <strong>Create</strong> &gt; <strong>Terrain Layer</strong> from the context menu. Then, configure the various settings in the <strong>Inspector</strong> window for your new Terrain Layer.</p>
+
+<p>See <a href="#Performance">Performance</a> for information about how the number of Terrain Layers affects <span class="tooltip"><strong>rendering</strong><span class="tooltiptext">The process of drawing graphics to the screen (or to a render texture). By default, the main camera in Unity renders its view to the screen. <a href="GraphicsOverview.html">More info</a><br/><span class="tooltipGlossaryLink">See in <a href="Glossary.html#Rendering">Glossary</a></span></span></span> performance. Even assigned Terrain Layers that you do not actually paint onto the Terrain tile might impact the <strong>rendering</strong> performance.</p>
+
+<h2>Adding Terrain Layers</h2>
+
+<p>Initially, a Terrain has no Terrain Layers assigned to it. By default, it uses a checkerboard texture until you add a Terrain Layer.</p>
+
+<p>After you create a Terrain Layer in your project, click the <strong>Edit Terrain Layers</strong> button and select <strong>Add Layer</strong> to bring up the <strong>Select TerrainLayer</strong> window. Double-click on a Terrain Layer in this window to add it to your Terrain.</p>
+
+<h2>Terrain Layer settings</h2>
+
+<p>Depending on the material that is set in <a href="terrain-OtherSettings.html">Terrain Settings</a>, as well as the Render Pipeline that is currently in use, you might see different options, settings, and <span class="tooltip"><strong>UI</strong><span class="tooltiptext">(User Interface) Allows a user to interact with your application. <a href="UISystem.html">More info</a><br/><span class="tooltipGlossaryLink">See in <a href="Glossary.html#UI">Glossary</a></span></span></span> here.</p>
+
+<figure>
+<img src="../uploads/Main/1.4-TerrainLayerSettings.png" alt="Terrain Layer settings in the Inspector">
+<figcaption>Terrain Layer settings in the Inspector</figcaption>
+</figure>
+
+<p>The available options for the Built-in Renderer and Terrain Material include:</p>
+
+<ul>
+<li>Diffuse texture</li>
+<li>Normal Map texture</li>
+<li>Normal Scale</li>
+<li>Mask Map texture</li>
+<li>Channel Remapping ranges</li>
+<li>Specular color</li>
+<li>Metallic value</li>
+<li>Smoothness value</li>
+<li>Tiling Settings</li>
+</ul>
+
+<h3>Diffuse</h3>
+
+<p>The <strong>Diffuse</strong> texture represents the base color texture/channels of the Terrain Layer.</p>
+
+<h3>Normal Map</h3>
+
+<p>The <strong>Normal Map</strong> texture contains the normal information for your Terrain Layer, and Unity uses this information in lighting calculations. If you do not assign a normal map texture and enable instancing in <a href="terrain-OtherSettings.html">Terrain Settings</a>, the Terrain uses the normals generated from the Terrain heightmap. If you assign a normal map texture and enable instancing, Unity uses the normal map texture instead of the normals generated from the heightmap. If you disable instancing on the Terrain, the built-in Terrain Material uses normals generated from the Terrain geometry, even if you assign a normal map texture on the Terrain Layer.</p>
+
+<h4>Normal Scale</h4>
+
+<p>If you assign a Normal Map texture, a new field called <strong>Normal Scale</strong> appears in the Terrain Layer settings. This value acts as a scaling factor for the normal values present in the Normal Map. A value of 0 means that the normals stored in the Normal Map have a scale of 0, while a value of 1 means that the normals are at full scale or influence.</p>
+
+<figure>
+<img src="../uploads/Main/1.4-NormalScale.png" alt="Normal Scale field in the Inspector">
+<figcaption>Normal Scale field in the Inspector</figcaption>
+</figure>
+
+<h3>Mask Map</h3>
+
+<p>The TerrainLit <span class="tooltip"><strong>shader</strong><span class="tooltiptext">A small script that contains the mathematical calculations and algorithms for calculating the Color of each pixel rendered, based on the lighting input and the Material configuration. <a href="Shaders.html">More info</a><br/><span class="tooltipGlossaryLink">See in <a href="Glossary.html#shader">Glossary</a></span></span></span>, which is part of the High Definition Render Pipeline (HDRP), uses this <strong>Mask Map</strong> texture data. Custom Terrain shaders might also use this texture for user-defined purposes.</p>
+
+<p>For the HDRP TerrainLit Shader, the RGBA channels of the Mask Map texture correspond to:</p>
+
+<ul>
+<li>R — Metallic</li>
+<li>G — Ambient Occlusion</li>
+<li>B — Height</li>
+<li>A — Smoothness (<strong>Diffuse</strong> Alpha becomes Density)</li>
+</ul>
+
+<h4>Channel Remapping</h4>
+
+<p>If you assign a Mask Map texture, <strong>Channel Remapping</strong> appears. Click the triangle next to <strong>Channel Remapping</strong> to expand the menu, which shows Min and Max values for the Mask Map RGBA channels. Unity uses these ranges to remap values in each channel of the Mask Map texture.</p>
+
+<figure>
+<img src="../uploads/Main/1.4-ChannelRemapping.png" alt="Channel Remapping ranges in the Inspector">
+<figcaption>Channel Remapping ranges in the Inspector</figcaption>
+</figure>
+
+<h3>Specular</h3>
+
+<p>The specular highlight color of the Terrain Layer.</p>
+
+<h3>Metallic</h3>
+
+<p>The overall metallic value of the Terrain Layer, which ranges from zero to one.</p>
+
+<h3>Smoothness</h3>
+
+<p>The overall smoothness value of the Terrain Layer, which ranges from zero to one.</p>
+
+<h3>Tiling Settings</h3>
+
+<p>The tiling settings that apply to all textures the Terrain Layer uses:</p>
+
+<ul>
+<li>
+<strong>Size</strong> — The size of the textures in Terrain space, and how often the textures tile.</li>
+<li>
+<strong>Offset</strong> — A base offset that Unity applies to the sample location for each texture in the Terrain Layer.</li>
+</ul>
+
+<h2>Texture Painting</h2>
+
+<p>Unity applies the first Terrain Layer you add to the entire landscape. If you add multiple Terrain Layers, use the <a href="terrain-PaintTexture.html">Paint Texture</a> tool to apply subsequent textures to your Terrain.</p>
+
+<p>If you add a new Terrain tile without any Terrain Layers, and paint on it, the system automatically adds the selected Terrain Layer to that new Terrain tile. Since this is the first added Terrain Layer, that texture becomes the base layer, and fills the entire Terrain tile.</p>
+
+<p>Under <strong>Brushes</strong> in the <strong>Terrain Inspector</strong>, there is a box that displays the available Brushes, along with the <strong>Brush Size</strong> and <strong>Opacity</strong> options underneath. See <a href="terrain-UsingTerrains.html">Creating and Editing Terrains</a> for more information about these tools.</p>
+
+<p><a name="Performance"></a></p>
+
+<h2>Performance</h2>
+
+<p>The number of Terrain Layers you assign to a Terrain tile might impact the performance of the renderer.</p>
+
+<p>The Built-In Renderer and <a href="ScriptableRenderPipeline.html">Lightweight Render Pipeline</a> each support four Terrain Layers per texture pass, with no limit on the number of passes. This means that although you are allowed to use as many Terrain Layers as you want, each pass increases the time spent rendering the Terrain. For maximum performance, limit each of your Terrain tiles to four Terrain Layers.</p>
+
+<p>If you’re using the <a href="ScriptableRenderPipeline.html">High Definition Render Pipeline</a>, you are allowed to add up to eight Terrain Layers per Terrain tile, and the system renders them in a single pass. No additional passes are possible. If you add more than eight Terrain Layers, they appear in the Unity Editor, but are ignored at runtime.</p>
+
+<hr>
+
+<ul>
+<li><p><span class="page-edit">2019–01–29 Page amended with <a href="DocumentationEditorialReview.html">editorial review</a>
+</span></p></li>
+<li><p><span class="page-history">Updated functionality in 2018.3</span></p></li>
+</ul>
+<div class="feedbackbox" id="feedbackbox">
+<div id="rating"><p>Did you find this page useful? Please give it a rating:<br><div id="ratecontent" class="c-rating"></div>
+</p></div>
+<div id="ratingThanks" style="display:none"><p>Thanks for rating this page!</p></div>
+<div id="problem"><p><a name="problem">Report a problem on this page</a></p></div>
+<div id="problemType" style="display:none"><p>What kind of problem would you like to report?<ul type="problems">
+<li><a name="needcode" id="problemneedcode">This page needs code samples</a></li>
+<li><a name="code" id="problemcode">Code samples do not work</a></li>
+<li><a name="missing" id="problemmissing">Information is missing</a></li>
+<li><a name="incorrect" id="problemincorrect">Information is incorrect</a></li>
+<li><a name="unclear" id="problemunclear">Information is unclear or confusing</a></li>
+<li><a name="language" id="problemlanguage">There is a spelling/grammar error on this page</a></li>
+<li><a name="other" id="problemother">Something else</a></li>
+</ul>
+<p><known_issues><p>Is something described here not working as you expect it to? It might be a <b>Known Issue</b>. Please check with the Issue Tracker at <a href="https://issuetracker.unity3d.com">issuetracker.unity3d.com</a>.</p></known_issues></p>
+</p></div>
+<div id="problemThanks" style="display:none"><p>Thanks for letting us know! This page has been marked for review based on your feedback.<br><br>If you have time, you can provide more information to help us fix the problem faster.<br><br><a id="problemThanksMoreInfoButton">Provide more information</a><br>
+</p></div>
+<div id="problemMoreInfo" style="display:none">
+<p id="problemNeedCodeForm" style="display:none">You've told us this page needs code samples. If you'd like to help us further, you could provide a code sample, or tell us about what kind of code sample you'd like to see:</p>
+<p id="problemCodeForm" style="display:none">You've told us there are code samples on this page which don't work. If you know how to fix it, or have something better we could use instead, please let us know:</p>
+<p id="problemMissingForm" style="display:none">You've told us there is information missing from this page. Please tell us more about what's missing:</p>
+<p id="problemIncorrectForm" style="display:none">You've told us there is incorrect information on this page. If you know what we should change to make it correct, please tell us:</p>
+<p id="problemUnclearForm" style="display:none">You've told us this page has unclear or confusing information. Please tell us more about what you found unclear or confusing, or let us know how we could make it clearer:</p>
+<p id="problemLanguageForm" style="display:none">You've told us there is a spelling or grammar error on this page. Please tell us what's wrong:</p>
+<p id="problemOtherForm" style="display:none">You've told us this page has a problem. Please tell us more about what's wrong:</p>
+<form>
+<textarea id="problemFormSuggestionField" cols="40" rows="5"></textarea><input type="hidden" id="problemFormDescription"><input type="submit" id="problemFormDescriptionSubmit" value="Submit">
+</form>
+</div>
+<div id="problemMoreInfoThanks" style="display:none"><p>Thanks for helping to make the Unity documentation better!</p></div>
+<script>InitialiseStarRating();</script>
+</div>
+<div class="nextprev clear">
+<div class="icon tt left mr1" data-distance="-40|-30|top">
+<span class="prev"><a href="terrain-StampTerrain.html"></a></span><div class="tip"> Stamp Terrain</div>
+</div>
+<div class="icon tt right" data-distance="-40|-30|top">
+<span class="next"><a href="class-Brush.html"></a></span><div class="tip"> Brushes</div>
+</div>
+</div>
+</div>
+<div class="footer-wrapper"><div class="footer clear">
+<div class="copy">Copyright © 2018 Unity Technologies. Publication: 2018.3-002S. Built: 2019-02-26.</div>
+<div class="menu">
+<a href="https://unity3d.com/learn">Tutorials</a><a href="https://answers.unity3d.com">Community Answers</a><a href="https://support.unity3d.com/hc/en-us">Knowledge Base</a><a href="https://forum.unity3d.com">Forums</a><a href="https://unity3d.com/asset-store">Asset Store</a>
+</div>
+</div></div>
+</div></div></div>
+</div>
+</body>
+</html>
